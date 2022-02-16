@@ -1,0 +1,5 @@
+github.com/UedaTakeyuki/compare v0.0.0-20220216101204-f64525c76fcc h1:erMbJVRYmSvA26I4I0pqBNQhB8YjZ33iZM/agfmEWzc=
+github.com/UedaTakeyuki/compare v0.0.0-20220216101204-f64525c76fcc/go.mod h1:H09V+qagqRJdlYFnbAOkRiALo150CN1OY+chpl0UL5A=
+github.com/speps/go-hashids v1.0.0 h1:jdFC07PrExRM4Og5Ev4411Tox75aFpkC77NlmutadNI=
+github.com/speps/go-hashids v2.0.0+incompatible h1:kSfxGfESueJKTx0mpER9Y/1XHl+FVQjtCqRyYcviFbw=
+github.com/speps/go-hashids v2.0.0+incompatible/go.mod h1:P7hqPzMdnZOfyIk+xrlG1QaSMw+gCBdHKsBDnhpaZvc=
