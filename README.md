@@ -3,7 +3,7 @@ my supplimentals of hashids
 
 # features
 ## 1. The support function to create hashids.HashID.
-Create ``hashids.HashID`` function ``func CreateHashID(salt string, alphabet string, minlength int) (h *(hashids.HashID), err error)``
+Create ``hashids.HashID`` function [func CreateHashID(salt string, alphabet string, minlength int) (h *(hashids.HashID), err error)](https://github.com/UedaTakeyuki/hid/blob/master/hid.go#L19)
 
 ## 2. ``hidType`` and their methods to support **Int**(not []int) <==> **string** use-case
 - ``func CreateHID(salt string, alphabet string, minlength int) (h *hidType, err error)``
