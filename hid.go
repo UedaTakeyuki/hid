@@ -11,7 +11,7 @@ import (
 	"github.com/speps/go-hashids"
 )
 
-type hidType hashids.HashID
+type HidType hashids.HashID
 
 /*
  * CreateHashID
@@ -26,12 +26,12 @@ func CreateHashID(salt string, alphabet string, minlength int) (h *(hashids.Hash
 	return
 }
 
-func CreateHID(salt string, alphabet string, minlength int) (h *hidType, err error) {
+func CreateHID(salt string, alphabet string, minlength int) (h *HidType, err error) {
 	// hashid
 	var hid *(hashids.HashID)
 	hid, err = CreateHashID(salt, alphabet, minlength)
 	if err == nil {
-		h = (*hidType)(hid)
+		h = (*HidType)(hid)
 	}
 	return
 }
@@ -39,17 +39,17 @@ func CreateHID(salt string, alphabet string, minlength int) (h *hidType, err err
 /*
  * Encode
  */
-func (h *hidType) Encode(i int) (str string, err error) {
+func (h *HidType) Encode(i int) (str string, err error) {
 	str, err = (*(hashids.HashID))(h).Encode([]int{i})
 	return
 }
 
-func (h *hidType) EncodeInt64(i int64) (str string, err error) {
+func (h *HidType) EncodeInt64(i int64) (str string, err error) {
 	str, err = (*(hashids.HashID))(h).EncodeInt64([]int64{i})
 	return
 }
 
-func (h *hidType) Decode(str string) (i int, err error) {
+func (h *HidType) Decode(str string) (i int, err error) {
 	var res []int
 	res, err = (*(hashids.HashID))(h).DecodeWithError(str)
 	if err == nil {
@@ -59,7 +59,7 @@ func (h *hidType) Decode(str string) (i int, err error) {
 	return
 }
 
-func (h *hidType) DecodeInt64(str string) (i int64, err error) {
+func (h *HidType) DecodeInt64(str string) (i int64, err error) {
 	var res []int64
 	res, err = (*(hashids.HashID))(h).DecodeInt64WithError(str)
 	if err == nil {
