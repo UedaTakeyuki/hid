@@ -45,6 +45,7 @@ func (h *HidType) Encode(i int) (str string, err error) {
 }
 
 func (h *HidType) EncodeInt64(i int64) (str string, err error) {
+	log.Println("i", i)
 	str, err = (*(hashids.HashID))(h).EncodeInt64([]int64{i})
 	return
 }
