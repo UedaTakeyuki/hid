@@ -2,3 +2,5 @@
 
 2022.02.16 add test, hidType and their methods.
 2022.02.17 fix: need export hidType -> HidType
+
+2022.11.03 block redundant debug log

@@ -54,7 +54,7 @@ func (h *HidType) Decode(str string) (i int, err error) {
 	var res []int
 	res, err = (*(hashids.HashID))(h).DecodeWithError(str)
 	if err == nil {
-		log.Println("res", res)
+		//		log.Println("res", res)
 		i = res[0]
 	}
 	return
